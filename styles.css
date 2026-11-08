@@ -1,0 +1,70 @@
+:root {
+  --color-primary: #005a9c;
+  --color-surface: #ffffff;
+  --color-background: #f4f6f8;
+  --color-text: #333333;
+  --color-border: #d0d7de;
+}
+
+body {
+  font-family: Impact;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 2rem;
+}
+
+
+
+.faq-container {
+  margin-bottom: 2rem;
+}
+
+/* Estilos del componente desplegable*/
+.faq-item {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: var(--color-surface);
+}
+
+.faq-question {
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none; /* Elimina la flecha predeterminada en navegadores modernos */
+  position: relative;
+}
+
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+  
+.faq-item[open] .faq-question::after {
+  content: '-';
+}
+  
+
+.faq-answer p {
+  margin: 10px;
+}
+
+/* Panel interactivo de notificación en tiempo real*/
+.panel-notificaciones {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 9.5px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+  
